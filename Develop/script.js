@@ -28,7 +28,7 @@ function special() {
   const special = '!@#$%^&*(){}[]=<>/,.';
   return special [Math.floor(Math.random() * special.length)];
 }
-var generateBtn = document.querySelector("#generate");
+let generateBtn = document.querySelector("#generate");
 
 function generatePassword(lowerCase, upperCase, numbers, special) {
   
@@ -38,9 +38,9 @@ function generatePassword(lowerCase, upperCase, numbers, special) {
 function writePassword() {
   var password = generatePassword(lowerCase+upperCase+numbers+special);
   var passwordText = document.querySelector("#password");
-
+  writePassword()
   passwordText.value = password;
-  for (let i = 0; i < generatePassword.length; i++)}
-    const password = generatePassword[3]}
+  for (let i = 0; i < generatePassword.length; i++)
+    let password = generatePassword[3]
 // Add event listener to generate button
 // generateBtn.addEventListener("click", writePassword);
