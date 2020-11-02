@@ -30,8 +30,8 @@ function special() {
 }
 let generateBtn = document.querySelector("#generate");
 
-function generatePassword(lowerCase, upperCase, numbers, special) {
-  
+function generatePassword () {
+  lowerCase(), upperCase(), numbers(), special() ``
 }
 
 // Write password to the #password input
@@ -41,6 +41,6 @@ function writePassword() {
   writePassword()
   passwordText.value = password;
   for (let i = 0; i < generatePassword.length; i++)
-    let password = generatePassword[3]
+}
 // Add event listener to generate button
 // generateBtn.addEventListener("click", writePassword);
