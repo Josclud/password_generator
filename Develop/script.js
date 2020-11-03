@@ -3,8 +3,17 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  let length = parseInt(prompt("Choose characters length between 8 and 128"))
+  let upperCase = confirm("Do you want upper case characters?")
+  let lowerCase = confirm("Do you want lower case characters?")
+  let nums = confirm("Do you want numbers?")
+  let special = confirm("Do you want symbols?")
+  let upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  let lowerChar = "abcdefghijklmnopqrstuvwxyz"
+  let numsChar = "0123456789"
+  let specialChar = "!@#$%^&*()_+"
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var passwordText = document.getElementById("#password");
 
   passwordText.value = password;
 
